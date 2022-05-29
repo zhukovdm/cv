@@ -20,3 +20,7 @@ my personal information in any malicious or unsolicited way.
 - [rpi.edu/latex/resumes](https://www.rpi.edu/dept/arc/training/latex/resumes/),
 - [darwiin/yaac-another-awesome-cv](https://github.com/darwiin/yaac-another-awesome-cv) and
 - fonts from [adobe-fonts/source-sans](https://github.com/adobe-fonts/source-sans).
+
+# Preview
+
+![preview.png](pic/preview.png)
