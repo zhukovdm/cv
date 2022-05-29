@@ -1,9 +1,14 @@
-.PHONY: all cv cl
+OUT_DIR := ./out
+TARGETS := cl cv
 
-all: cl cv
+.PHONY: all
 
-cl:
-	xelatex cl.tex
+all: $(TARGETS:%=%.pdf)
 
-cv:
-	xelatex cv.tex
+%.pdf: %.tex
+	mkdir -p $(OUT_DIR)
+	xelatex --output-directory=$(OUT_DIR) $?
+	xelatex --output-directory=$(OUT_DIR) $?
+
+clean:
+	rm -rf $(OUT_DIR)
