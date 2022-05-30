@@ -1,11 +1,16 @@
 # cv
 
-The `cv` includes résumé and cover letter with unified document style.
+The `cv` includes one-page résumé and cover letter with unified document style.
+
+# Prerequisites
+
+[TeX Live](https://www.tug.org/texlive/) is assumed to be installed
+on the target system.
 
 # Build
 
-To compile execute `make`. [TeX Live](https://www.tug.org/texlive/) is assumed
-to be installed on the target system.
+To compile both documents, execute `make`. Run `make cv` or `make cl` for
+separate compilation. Files are generated in `./out` folder.
 
 # How to use
 

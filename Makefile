@@ -3,12 +3,11 @@ TARGETS := cl cv
 
 .PHONY: all
 
-all: $(TARGETS:%=%.pdf)
+all: $(TARGETS)
 
-%.pdf: %.tex
+$(TARGETS): %: %.tex
 	mkdir -p $(OUT_DIR)
-	xelatex --output-directory=$(OUT_DIR) $?
-	xelatex --output-directory=$(OUT_DIR) $?
+	latexmk -output-directory=$(OUT_DIR) -xelatex $?
 
 clean:
 	rm -rf $(OUT_DIR)
