@@ -10,7 +10,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{fontenc}
 \RequirePackage{fontspec}
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome5}
 \RequirePackage{geometry}
 \RequirePackage[hidelinks, pdfencoding=auto]{hyperref}
 \RequirePackage{indentfirst}
@@ -25,6 +25,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{xparse}
 \RequirePackage{fancyhdr}
+\RequirePackage{wasysym}
 
 \newcommand*{\fontdir}[1][fnt/]{\def\@fontdir{#1}}
 \fontdir
@@ -60,12 +61,12 @@
 \newcommand{\githubSymbol}{\faIconBox{\faGithub}}
 \newcommand{\locationSymbol}{\faIconBox{\faMapMarker}}
 \newcommand{\addSectionSymbol}{\faIconBox{\faPlus}}
-\newcommand{\certSectionSymbol}{\faIconBox{\faFileTextO}}
+\newcommand{\certSectionSymbol}{\faIconBox{\faFile*[regular]}}
 \newcommand{\eduSectionSymbol}{\faIconBox{\faGraduationCap}}
 \newcommand{\expSectionSymbol}{\faIconBox{\faLaptop}}
 \newcommand{\langSectionSymbol}{\faIconBox{\faLanguage}}
 \newcommand{\projSectionSymbol}{\faIconBox{\faCode}}
-\newcommand{\skillSectionSymbol}{\faIconBox{\faGears}}
+\newcommand{\skillSectionSymbol}{\faIconBox{\faCogs}}
 \newcommand{\techSectionSymbol}{\faIconBox{\faTasks}}
 
 \newcommand\link[2]{\color{accentcolor}\href{#1}{#2}\color{black}}
@@ -131,7 +132,6 @@
  \section{\texorpdfstring{\color{accentcolor}#2\enspace\textsc{\textbf{#1}}}{#1}}
 }
 
-\newcommand\skill[2]{
- \textbf{#1} & \foreach \x in {1,...,5}{{\color{accentcolor}
- \ifnumgreater{\x}{#2}{\faCircleThin}{\faCircle}}\enspace} \\
+\newcommand\cquad{%
+ \hspace{0.2em}
 }
