@@ -57,8 +57,12 @@
 [Path=\@fontdir, BoldFont=*-Regular, ItalicFont=*-LightIt, UprightFont=*-Light]
 
 \newcommand{\faIconBox}[1]{\makebox[1.2em][c]{#1}}
-\newcommand{\mailSymbol}{\faIconBox{\faEnvelope}}
+\newcommand{\emailSymbol}{\faIconBox{\faEnvelope}}
+\newcommand{\phoneSymbol}{\faIconBox{\faPhone}}
 \newcommand{\githubSymbol}{\faIconBox{\faGithub}}
+\newcommand{\webpageSymbol}{\faIconBox{\faLink}}
+\newcommand{\linkedinSymbol}{\faIconBox{\faLinkedin}}
+\newcommand{\leetcodeSymbol}{\faIconBox{\faLink}}
 \newcommand{\locationSymbol}{\faIconBox{\faMapMarker}}
 \newcommand{\addSectionSymbol}{\faIconBox{\faPlus}}
 \newcommand{\achSectionSymbol}{\faIconBox{\faStar}}
@@ -88,13 +92,22 @@
 \newcommand*{\sociallink}[3]{\textcolor{accentcolor}{#1}\enskip\link{#2}{#3}\quad}
 \newcommand*{\socialtext}[2]{\textcolor{accentcolor}{#1}\enskip#2\quad}
 \newcommand*{\position}[1]{\def\@position{#1}}
-\newcommand*{\email}[1]{\sociallink{\mailSymbol}{mailto:#1}{#1}}
+\newcommand*{\xemail}[1]{\sociallink{\emailSymbol}{mailto:#1}{#1}}
+\newcommand*{\xphone}[1]{\sociallink{\phoneSymbol}{tel:#1}{#1}}
 \newcommand*{\github}[1]{\sociallink{\githubSymbol}{https://github.com/#1}{#1}}
+\newcommand*{\xwebpage}[1]{\sociallink{\webpageSymbol}{https://#1/}{#1}}
+\newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{https://linkedin.com/in/#1}{#1}}
+\newcommand*{\leetcode}[1]{\sociallink{\leetcodeSymbol}{https://leetcode.com/#1}{#1}}
 \newcommand*{\address}[1]{\socialtext{\locationSymbol}{#1}}
 \newcommand*{\cvtitle}[1]{\color{accentcolor}\textbf{\Large{#1}}\color{black}}
+
 \newcommand*{\socialemail}[1]{\def\@socialemail{#1}}
+\newcommand*{\socialphone}[1]{\def\@socialphone{#1}}
 \newcommand*{\socialaddress}[1]{\def\@socialaddress{#1}}
 \newcommand*{\socialgithub}[1]{\def\@socialgithub{#1}}
+\newcommand*{\socialwebpage}[1]{\def\@socialwebpage{#1}}
+\newcommand*{\sociallinkedin}[1]{\def\@sociallinkedin{#1}}
+\newcommand*{\socialleetcode}[1]{\def\@socialleetcode{#1}}
 \newcommand*{\socialpicture}[1]{\def\@socialpicture{#1}}
 
 \newcommand*\twocolumnsection[2]{
