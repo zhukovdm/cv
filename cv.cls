@@ -61,7 +61,7 @@
 \newcommand{\githubSymbol}{\faIconBox{\faGithub}}
 \newcommand{\locationSymbol}{\faIconBox{\faMapMarker}}
 \newcommand{\addSectionSymbol}{\faIconBox{\faPlus}}
-\newcommand{\certSectionSymbol}{\faIconBox{\faFile*[regular]}}
+\newcommand{\achSectionSymbol}{\faIconBox{\faStar}}
 \newcommand{\eduSectionSymbol}{\faIconBox{\faGraduationCap}}
 \newcommand{\expSectionSymbol}{\faIconBox{\faLaptop}}
 \newcommand{\langSectionSymbol}{\faIconBox{\faLanguage}}
