@@ -62,6 +62,7 @@
 \newcommand{\githubSymbol}{\faIconBox{\faGithub}}
 \newcommand{\webpageSymbol}{\faIconBox{\faLink}}
 \newcommand{\linkedinSymbol}{\faIconBox{\faLinkedin}}
+\newcommand{\telegramSymbol}{\faIconBox{\faPaperPlane}}
 \newcommand{\leetcodeSymbol}{\faIconBox{\faLink}}
 \newcommand{\locationSymbol}{\faIconBox{\faMapMarker}}
 \newcommand{\addSectionSymbol}{\faIconBox{\faPlus}}
@@ -76,12 +77,12 @@
 \newcommand\link[2]{\color{accentcolor}\href{#1}{#2}\color{black}}
 
 \newcommand{\cvtag}[1]{
- \tikz[baseline]
- \node[
-  anchor=base, draw=bordercolor, rounded corners=0.5ex, inner xsep=1ex,
-  inner ysep =0.55ex, text height=1.3ex, text depth=.25ex
- ]
- {#1};
+  \tikz[baseline]
+  \node[
+    anchor=base, draw=bordercolor, rounded corners=0.5ex, inner xsep=1ex,
+    inner ysep =0.55ex, text height=1.3ex, text depth=.25ex
+  ]
+  {#1};
 }
 
 \newcommand*{\firstname}[1]{\def\@firstname{#1}}
@@ -97,6 +98,7 @@
 \newcommand*{\github}[1]{\sociallink{\githubSymbol}{https://github.com/#1}{#1}}
 \newcommand*{\xwebpage}[1]{\sociallink{\webpageSymbol}{https://#1/}{#1}}
 \newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{https://linkedin.com/in/#1}{#1}}
+\newcommand*{\telegram}[1]{\sociallink{\telegramSymbol}{https://t.me/#1}{#1}}
 \newcommand*{\leetcode}[1]{\sociallink{\leetcodeSymbol}{https://leetcode.com/#1}{#1}}
 \newcommand*{\address}[1]{\socialtext{\locationSymbol}{#1}}
 \newcommand*{\cvtitle}[1]{\color{accentcolor}\textbf{\Large{#1}}\color{black}}
@@ -107,44 +109,45 @@
 \newcommand*{\socialgithub}[1]{\def\@socialgithub{#1}}
 \newcommand*{\socialwebpage}[1]{\def\@socialwebpage{#1}}
 \newcommand*{\sociallinkedin}[1]{\def\@sociallinkedin{#1}}
+\newcommand*{\socialtelegram}[1]{\def\@socialtelegram{#1}}
 \newcommand*{\socialleetcode}[1]{\def\@socialleetcode{#1}}
 \newcommand*{\socialpicture}[1]{\def\@socialpicture{#1}}
 
 \newcommand*\twocolumnsection[2]{
- \begin{minipage}[t]{\dimexpr(0.65\linewidth) - 1.0em}#1\end{minipage}
- \hfill
- \begin{minipage}[t]{\dimexpr(0.35\linewidth) - 1.0em}#2\end{minipage}
+  \begin{minipage}[t]{\dimexpr(0.65\linewidth) - 1.0em}#1\end{minipage}
+  \hfill
+  \begin{minipage}[t]{\dimexpr(0.35\linewidth) - 1.0em}#2\end{minipage}
 }
 
 \newcommand*{\cvheader}{
- \begin{minipage}[c][4.0cm][t]{0.69\linewidth}
-  \user{\@firstname}{\@lastname} \vspace{0.7em} \\
-  \cvtitle{\@position} \medskip \\
-  \@socialaddress \smallskip \\
-  \@socialemail \smallskip \\
-  \@socialgithub
- \end{minipage}
- \begin{minipage}[c][4.0cm][t]{0.29\linewidth}
-  \begin{flushright}
-   \begin{tikzpicture}
-    \clip (0,0) circle (1.8cm) node {\includegraphics[width=3.6cm]{pic/\@socialpicture}};
-   \end{tikzpicture}
-  \end{flushright}
- \end{minipage}
- \vspace{0.5em}
+  \begin{minipage}[c][4.0cm][t]{0.69\linewidth}
+    \user{\@firstname}{\@lastname} \vspace{0.7em} \\
+    \cvtitle{\@position} \medskip \\
+    \@socialaddress \medskip \\
+    \@socialemail \smallskip \@socialphone \smallskip \\
+    \@socialgithub \smallskip \@sociallinkedin \smallskip \@socialtelegram \smallskip \\
+  \end{minipage}
+  \begin{minipage}[c][4.0cm][t]{0.29\linewidth}
+    \begin{flushright}
+      \begin{tikzpicture}
+        \clip (0,0) circle (1.8cm) node {\includegraphics[width=3.6cm]{pic/\@socialpicture}};
+      \end{tikzpicture}
+    \end{flushright}
+  \end{minipage}
+  \vspace{0.5em}
 }
 
 \newcommand*{\footer}[1]{
- \fancyfoot{}
- \fancyfoot[L]{\textsc{\small{\today}}}
- \fancyfoot[C]{\textsc{\small{#1}}}
- \fancyfoot[R]{\textsc{\small{\thepage/\pageref{LastPage}}}}
+  \fancyfoot{}
+  \fancyfoot[L]{\textsc{\small{\today}}}
+  \fancyfoot[C]{\textsc{\small{#1}}}
+  \fancyfoot[R]{\textsc{\small{\thepage/\pageref{LastPage}}}}
 }
 
 \newcommand\cvsection[2]{
- \section{\texorpdfstring{\color{accentcolor}#2\enspace\textsc{\textbf{#1}}}{#1}}
+  \section{\texorpdfstring{\color{accentcolor}#2\enspace\textsc{\textbf{#1}}}{#1}}
 }
 
 \newcommand\cquad{%
- \hspace{0.2em}
+  \hspace{0.2em}
 }
