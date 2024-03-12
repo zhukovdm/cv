@@ -62,9 +62,9 @@
 \newcommand{\githubSymbol}{\faIconBox{\faGithub}}
 \newcommand{\webpageSymbol}{\faIconBox{\faLink}}
 \newcommand{\linkedinSymbol}{\faIconBox{\faLinkedin}}
-\newcommand{\telegramSymbol}{\faIconBox{\faPaperPlane}}
+\newcommand{\telegramSymbol}{\faIconBox{\faTelegramPlane}}
 \newcommand{\leetcodeSymbol}{\faIconBox{\faLink}}
-\newcommand{\locationSymbol}{\faIconBox{\faMapMarker}}
+\newcommand{\locationSymbol}{\faIconBox{\faMapMarker*}}
 \newcommand{\addSectionSymbol}{\faIconBox{\faPlus}}
 \newcommand{\achSectionSymbol}{\faIconBox{\faStar}}
 \newcommand{\eduSectionSymbol}{\faIconBox{\faGraduationCap}}
