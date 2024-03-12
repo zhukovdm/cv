@@ -57,12 +57,12 @@
 [Path=\@fontdir, BoldFont=*-Regular, ItalicFont=*-LightIt, UprightFont=*-Light]
 
 \newcommand{\faIconBox}[1]{\makebox[1.2em][c]{#1}}
-\newcommand{\emailSymbol}{\faIconBox{\faEnvelope}}
+\newcommand{\emailSymbol}{\faIconBox{\faEnvelope[regular]}}
 \newcommand{\phoneSymbol}{\faIconBox{\faPhone}}
 \newcommand{\githubSymbol}{\faIconBox{\faGithub}}
 \newcommand{\webpageSymbol}{\faIconBox{\faLink}}
 \newcommand{\linkedinSymbol}{\faIconBox{\faLinkedin}}
-\newcommand{\telegramSymbol}{\faIconBox{\faTelegramPlane}}
+\newcommand{\telegramSymbol}{\faIconBox{\faTelegram}}
 \newcommand{\leetcodeSymbol}{\faIconBox{\faLink}}
 \newcommand{\locationSymbol}{\faIconBox{\faMapMarker*}}
 \newcommand{\addSectionSymbol}{\faIconBox{\faPlus}}
