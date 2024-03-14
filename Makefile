@@ -1,5 +1,5 @@
 OUT_DIR := ./out
-TARGETS := cl cv
+TARGETS := cover-letter resume
 XELATEX := xelatex -output-directory=$(OUT_DIR)
 
 .PHONY: all
