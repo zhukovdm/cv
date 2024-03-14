@@ -1,6 +1,6 @@
 # cv
 
-The `cv` includes one-page résumé and cover letter with unified document style.
+The `cv` includes one-page resume and cover letter with unified document style.
 
 # Prerequisites
 
@@ -9,13 +9,13 @@ on the target system.
 
 # Build
 
-To compile both documents, execute `make`. Run `make cv` or `make cl` for
-separate compilation. Files are generated in `./out` folder.
+To compile both documents, execute `make`. Run `make resume` or `make cover-letter`
+for separate compilation. Files are generated in `./out` folder.
 
 # How to use
 
-You are free to copy and modify source codes. Please, **do not** use
-my personal information in any malicious or unsolicited way.
+You are free to copy and modify source codes. Please, **do not** use my personal
+information in any malicious or unsolicited way.
 
 # Credits
 
